@@ -1,0 +1,29 @@
+header {
+    background: #000000;
+    height: 64%;
+    margin-bottom: 102px;
+    padding: 8% 15%;
+}
+
+.page-header {
+    font-family: 'Berkshire Swash';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 94px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FF5E19;
+    margin-bottom: 20px;
+}
+
+.page-des {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 2%;
+}
