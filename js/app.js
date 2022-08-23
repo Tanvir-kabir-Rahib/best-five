@@ -23,6 +23,17 @@ document.getElementById("player-cost-calculation").addEventListener("click", fun
     document.getElementById("player-cost").innerText = playerCost;
 })
 
+document.getElementById("player-container").addEventListener("click", function(event){
+    const selectedPlayerList = document.getElementById("player-list");
+    if(selectedPlayerList.childElementCount === 5){
+        const selectionButton = document.getElementsByClassName("player-btn")
+        for (x of selectionButton){
+            x.setAttribute("data-bs-toggle", "modal");
+            x.setAttribute("data-bs-target", "#exampleModal");
+        }
+    };
+})     
+    
 
 document.getElementById("cavani").addEventListener("click", function (event) {
     const name = event.target.parentNode.children[0].innerText;

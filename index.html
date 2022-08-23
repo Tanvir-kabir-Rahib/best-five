@@ -27,7 +27,7 @@
     <main>
         <div class="row m-5 gy-5">
             <section class="col-9">
-                <div class="row g-30">
+                <div class="row g-30" id="player-container">
                     <div class="col-4">
                         <div class="card">
                             <img src="images/cavani.jpg" class="card-img-top" alt="...">
@@ -124,6 +124,26 @@
                 </section>
             </div>
         </div>
+        <section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Limit Exceed</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            You Can Only Select 5 Players.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class="back-black p-5">
         <hr class="border-5 border-light mb-4">
