@@ -4,12 +4,13 @@ function playerExpense(perPlayerCost, selected) {
 }
 
 function totalCost(playerCost, managerCost, coachCost) {
-    const total = parseInt(playerCost) + parseInt(managerCost) + parseInt(coachCost);
+    console.log("hello")
+    const total = parseFloat(playerCost) + parseFloat(managerCost) + parseFloat(coachCost);
     return total;
 }
 
 document.getElementById("total-calculation").addEventListener("click", function () {
-    const playerCost = docment.getElementById("player-cost").innerText;
+    const playerCost = document.getElementById("player-cost").innerText;
     const managerCost = document.getElementById("manager").value;
     const coachCost = document.getElementById("coach").value;
     const cost = totalCost(playerCost, managerCost, coachCost);
