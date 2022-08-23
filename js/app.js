@@ -4,7 +4,6 @@ function playerExpense(perPlayerCost, selected) {
 }
 
 function totalCost(playerCost, managerCost, coachCost) {
-    console.log("hello")
     const total = parseFloat(playerCost) + parseFloat(managerCost) + parseFloat(coachCost);
     return total;
 }
@@ -106,6 +105,78 @@ document.getElementById("messi").addEventListener("click", function (event) {
     if (playerList.childElementCount < 5) {
         playerList.appendChild(li)
         const selectedButton = document.getElementById("messi");
+        selectedButton.classList.add("disabled");
+        selectedButton.innerText = "Selected";
+    };
+});
+document.getElementById("neymar").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li");
+    li.innerText = name;
+    const playerList = document.getElementById("player-list");
+    if (playerList.childElementCount < 5) {
+        playerList.appendChild(li)
+        const selectedButton = document.getElementById("neymar");
+        selectedButton.classList.add("disabled");
+        selectedButton.innerText = "Selected";
+    };
+});
+document.getElementById("ozil").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li");
+    li.innerText = name;
+    const playerList = document.getElementById("player-list");
+    if (playerList.childElementCount < 5) {
+        playerList.appendChild(li)
+        const selectedButton = document.getElementById("ozil");
+        selectedButton.classList.add("disabled");
+        selectedButton.innerText = "Selected";
+    };
+});
+document.getElementById("ramos").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li");
+    li.innerText = name;
+    const playerList = document.getElementById("player-list");
+    if (playerList.childElementCount < 5) {
+        playerList.appendChild(li)
+        const selectedButton = document.getElementById("ramos");
+        selectedButton.classList.add("disabled");
+        selectedButton.innerText = "Selected";
+    };
+});
+document.getElementById("renato").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li");
+    li.innerText = name;
+    const playerList = document.getElementById("player-list");
+    if (playerList.childElementCount < 5) {
+        playerList.appendChild(li)
+        const selectedButton = document.getElementById("renato");
+        selectedButton.classList.add("disabled");
+        selectedButton.innerText = "Selected";
+    };
+});
+document.getElementById("ronaldo").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li");
+    li.innerText = name;
+    const playerList = document.getElementById("player-list");
+    if (playerList.childElementCount < 5) {
+        playerList.appendChild(li)
+        const selectedButton = document.getElementById("ronaldo");
+        selectedButton.classList.add("disabled");
+        selectedButton.innerText = "Selected";
+    };
+});
+document.getElementById("vitor").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li");
+    li.innerText = name;
+    const playerList = document.getElementById("player-list");
+    if (playerList.childElementCount < 5) {
+        playerList.appendChild(li)
+        const selectedButton = document.getElementById("vitor");
         selectedButton.classList.add("disabled");
         selectedButton.innerText = "Selected";
     };
