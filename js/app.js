@@ -22,3 +22,59 @@ document.getElementById("player-cost-calculation").addEventListener("click", fun
     const playerCost = playerExpense(perPlayer, selected);
     document.getElementById("player-cost").innerText = playerCost;
 })
+
+
+document.getElementById("cavani").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li")
+    li.innerText = name;
+    const playerList = document.getElementById("player-list")
+    playerList.appendChild(li)
+    const selectedButton = document.getElementById("cavani")
+    selectedButton.classList.add("disabled")
+})
+document.getElementById("bale").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li")
+    li.innerText = name;
+    const playerList = document.getElementById("player-list")
+    playerList.appendChild(li)
+    const selectedButton = document.getElementById("bale")
+    selectedButton.classList.add("disabled")
+})
+document.getElementById("luka").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li")
+    li.innerText = name;
+    const playerList = document.getElementById("player-list")
+    playerList.appendChild(li)
+    const selectedButton = document.getElementById("luka")
+    selectedButton.classList.add("disabled")
+})
+document.getElementById("marcelo").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li")
+    li.innerText = name;
+    const playerList = document.getElementById("player-list")
+    playerList.appendChild(li)
+    const selectedButton = document.getElementById("marcelo")
+    selectedButton.classList.add("disabled")
+})
+document.getElementById("mbappe").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li")
+    li.innerText = name;
+    const playerList = document.getElementById("player-list")
+    playerList.appendChild(li)
+    const selectedButton = document.getElementById("mbappe")
+    selectedButton.classList.add("disabled")
+})
+document.getElementById("messi").addEventListener("click", function (event) {
+    const name = event.target.parentNode.children[0].innerText;
+    const li = document.createElement("li")
+    li.innerText = name;
+    const playerList = document.getElementById("player-list")
+    playerList.appendChild(li)
+    const selectedButton = document.getElementById("messi")
+    selectedButton.classList.add("disabled")
+})

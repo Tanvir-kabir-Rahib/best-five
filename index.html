@@ -19,21 +19,79 @@
 <body class="bg-secondary bg-opacity-25">
     <header>
         <h1 class="page-header">Create Your Team</h1>
-        <p class="page-des">Select your favourite players and make your owm specified team. You can select only 5 players from the
+        <p class="page-des">Select your favourite players and make your owm specified team. You can select only 5
+            players from the
             players below. After the selection of your favourite players you can calculate the total cost of your team.
         </p>
     </header>
     <main>
         <div class="row m-5 gy-5">
             <section class="col-9">
-                <div class="row g-3">
+                <div class="row g-30">
                     <div class="col-4">
                         <div class="card">
                             <img src="images/cavani.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Edinson Cavani</h5>
-                                <p class="card-text d-flex justify-content-evenly"><span>36 Goals</span><span>-</span><span>120 Assist</span></p>
-                                <Button class="btn btn-primary container-fluid">Select</Button>
+                                <p class="card-text d-flex justify-content-evenly"><span>32
+                                        Goals</span><span>-</span><span>112 Assist</span></p>
+                                <Button id="cavani" class="btn btn-primary container-fluid player-btn">Select</Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/gareth-bale.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Gareth Bale</h5>
+                                <p class="card-text d-flex justify-content-evenly"><span>26
+                                        Goals</span><span>-</span><span>93 Assist</span></p>
+                                <Button id="bale" class="btn btn-primary container-fluid player-btn">Select</Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/luka-modric.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Luka Modric</h5>
+                                <p class="card-text d-flex justify-content-evenly"><span>23
+                                        Goals</span><span>-</span><span>88 Assist</span></p>
+                                <Button id="luka" class="btn btn-primary container-fluid player-btn">Select</Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/marcelo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Marcelo Vieira</h5>
+                                <p class="card-text d-flex justify-content-evenly"><span>13
+                                        Goals</span><span>-</span><span>48 Assist</span></p>
+                                <Button id="marcelo" class="btn btn-primary container-fluid player-btn">Select</Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/mbappe.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Kylian Mbappé
+                                </h5>
+                                <p class="card-text d-flex justify-content-evenly"><span>33
+                                        Goals</span><span>-</span><span>98 Assist</span></p>
+                                <Button id="mbappe" class="btn btn-primary container-fluid player-btn">Select</Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="images/MESSI.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Lionel Messi</h5>
+                                <p class="card-text d-flex justify-content-evenly"><span>36
+                                        Goals</span><span>-</span><span>120 Assist</span></p>
+                                <Button id="messi" class="btn btn-primary container-fluid player-btn">Select</Button>
                             </div>
                         </div>
                     </div>
@@ -47,13 +105,22 @@
                 </section>
                 <section class="back-black p-3 rounded-3">
                     <h2 class="text-center text-white mb-4">Budget</h2>
-                    <p class="d-flex justify-content-between"><span class="text-secondary">Per Player</span><input id="per-player" type="text" class="text-white border-white container-fluid w-50 back-black mx-0"></p>
-                    <button id="player-cost-calculation" class="btn btn-primary fw-semibold mb-3 container-fluid">Calculate</button>
-                    <p class="d-flex justify-content-between"><span class="text-secondary">Player Expenses</span><span class="text-warning">$<span id="player-cost">0</span></span></p>
-                    <p class="d-flex justify-content-between"><span class="text-secondary">Manager</span><input id="manager" type="text" class="text-white border-white container-fluid w-50 back-black mx-0"></p>                    
-                    <p class="d-flex justify-content-between"><span class="text-secondary">Coach</span><input id="coach" type="text" class="text-white border-white container-fluid w-50 back-black mx-0"></p>            
-                    <button id="total-calculation" class="mb-3 btn btn-primary fw-semibolder container-fluid">Calculate Total</button>
-                    <p class="d-flex justify-content-between"><span class="text-secondary">Total</span><span class="text-warning">$<span id="total-cost">0</span></span></p>        
+                    <p class="d-flex justify-content-between"><span class="text-secondary">Per Player</span><input
+                            id="per-player" type="text"
+                            class="text-white border-white container-fluid w-50 back-black mx-0"></p>
+                    <button id="player-cost-calculation"
+                        class="btn btn-primary fw-semibold mb-3 container-fluid">Calculate</button>
+                    <p class="d-flex justify-content-between"><span class="text-secondary">Player Expenses</span><span
+                            class="text-warning">$<span id="player-cost">0</span></span></p>
+                    <p class="d-flex justify-content-between"><span class="text-secondary">Manager</span><input
+                            id="manager" type="text"
+                            class="text-white border-white container-fluid w-50 back-black mx-0"></p>
+                    <p class="d-flex justify-content-between"><span class="text-secondary">Coach</span><input id="coach"
+                            type="text" class="text-white border-white container-fluid w-50 back-black mx-0"></p>
+                    <button id="total-calculation" class="mb-3 btn btn-primary fw-semibolder container-fluid">Calculate
+                        Total</button>
+                    <p class="d-flex justify-content-between"><span class="text-secondary">Total</span><span
+                            class="text-warning">$<span id="total-cost">0</span></span></p>
                 </section>
             </div>
         </div>
