@@ -1,23 +1,25 @@
-const selected = document.getElementById("player-list").childElementCount;
 function playerExpense(perPlayerCost, selected) {
-    const totalPlayerExpense = parseFloat(perPlayerCost) * selected;
+    const totalPlayerExpense = parseFloat(perPlayerCost) * parseFloat(selected);
     return totalPlayerExpense;
 }
 
-function totalCost(perPlayerEx, managerCost, coachCost, selected) {
-    const playerCost = playerExpense(perPlayerEx, selected);
-    const total = playerCost + parseInt(managerCost) + parseInt(coachCost);
+function totalCost(playerCost, managerCost, coachCost) {
+    const total = parseInt(playerCost) + parseInt(managerCost) + parseInt(coachCost);
     return total;
 }
 
 document.getElementById("total-calculation").addEventListener("click", function () {
-    const perPlayer = document.getElementById("per-player").value;
+    const playerCost = docment.getElementById("player-cost").innerText;
     const managerCost = document.getElementById("manager").value;
     const coachCost = document.getElementById("coach").value;
-    const cost = totalCost(perPlayer, managerCost, coachCost, selected);
-    document.getElementById("total-cost").innerText = cost;
+    const cost = totalCost(playerCost, managerCost, coachCost);
+    const costTotal = document.getElementById("total-cost")
+    costTotal.innerText = cost;
 })
+
 document.getElementById("player-cost-calculation").addEventListener("click", function () {
+    const selected = document.getElementById("player-list").childElementCount;
+    console.log(selected)
     const perPlayer = document.getElementById("per-player").value;
     const playerCost = playerExpense(perPlayer, selected);
     document.getElementById("player-cost").innerText = playerCost;
